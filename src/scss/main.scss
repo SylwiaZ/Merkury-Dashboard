@@ -1,7 +1,11 @@
-@import 'normalize';
+@import 'vendors/normalize.scss';
 
-body {
-	main {
-		margin: 0 auto;
-	}
-}
+@import 'base/base.scss';
+
+@import 'layout/login.scss';
+@import 'layout/home.scss';
+@import 'layout/workflow.scss';
+@import 'layout/statistics.scss';
+@import 'layout/calendar.scss';
+@import 'layout/users.scss';
+@import 'layout/settings.scss';

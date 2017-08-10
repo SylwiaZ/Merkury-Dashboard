@@ -1,0 +1,17 @@
+@mixin btn($font, $color, $bg-color, $bg-hover) {
+    font-size: $font;
+    font-weight: 700;
+    color: $color;
+    background-color: $bg-color;
+    cursor: pointer;
+    
+    &:hover {
+        background-color: $bg-hover;
+    }
+}
+
+@mixin btn-size($height, $width) {
+    height: $height;
+    width: $width;
+    border-radius: 35px;
+}

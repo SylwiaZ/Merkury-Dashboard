@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*! normalize.css v5.0.0 | MIT License | github.com/necolas/normalize.css */
 /**
  * 1. Change the default font family in all browsers (opinionated).
@@ -464,6 +465,207 @@ template {
   list-style: none;
 }
 
+@font-face {
+  font-family: 'icons';
+  src: url("../font/icons.eot?85034150");
+  src: url("../font/icons.eot?85034150#iefix") format("embedded-opentype"), url("../font/icons.woff2?85034150") format("woff2"), url("../font/icons.woff?85034150") format("woff"), url("../font/icons.ttf?85034150") format("truetype"), url("../font/icons.svg?85034150#icons") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* Chrome hack: SVG is rendered more smooth in Windozze. 100% magic, uncomment if you need it. */
+/* Note, that will break hinting! In other OS-es font will be not as sharp as it could be */
+/*
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+  @font-face {
+    font-family: 'icons';
+    src: url('../font/icons.svg?85034150#icons') format('svg');
+  }
+}
+*/
+[class^="icon-"]:before, [class*=" icon-"]:before {
+  font-family: "icons";
+  font-style: normal;
+  font-weight: normal;
+  speak: none;
+  display: inline-block;
+  text-decoration: inherit;
+  width: 1em;
+  margin-right: .2em;
+  text-align: center;
+  /* opacity: .8; */
+  /* For safety - reset parent styles, that can break glyph codes*/
+  font-variant: normal;
+  text-transform: none;
+  /* fix buttons height, for twitter bootstrap */
+  line-height: 1em;
+  /* Animation center compensation - margins should be symmetric */
+  /* remove if not needed */
+  margin-left: .2em;
+  /* you can be more comfortable with increased icons size */
+  /* font-size: 120%; */
+  /* Font smoothing. That was taken from TWBS */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  /* Uncomment for 3D effect */
+  /* text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3); */
+}
+
+.icon-down:before {
+  content: '\e800';
+}
+
+/* '' */
+.icon-home:before {
+  content: '\e801';
+}
+
+/* '' */
+.icon-eq:before {
+  content: '\e802';
+}
+
+/* '' */
+.icon-chart:before {
+  content: '\e803';
+}
+
+/* '' */
+.icon-calendar:before {
+  content: '\e804';
+}
+
+/* '' */
+.icon-cog-outline:before {
+  content: '\e805';
+}
+
+/* '' */
+.icon-search:before {
+  content: '\e806';
+}
+
+/* '' */
+.icon-mail-1:before {
+  content: '\e807';
+}
+
+/* '' */
+.icon-down-dir:before {
+  content: '\e808';
+}
+
+/* '' */
+.icon-left-dir:before {
+  content: '\e809';
+}
+
+/* '' */
+.icon-plus:before {
+  content: '\e80a';
+}
+
+/* '' */
+.icon-right:before {
+  content: '\e80b';
+}
+
+/* '' */
+.icon-up:before {
+  content: '\e80c';
+}
+
+/* '' */
+.icon-clock:before {
+  content: '\e80d';
+}
+
+/* '' */
+.icon-dot-3:before {
+  content: '\e80e';
+}
+
+/* '' */
+.icon-cog:before {
+  content: '\e80f';
+}
+
+/* '' */
+.icon-reply:before {
+  content: '\e810';
+}
+
+/* '' */
+.icon-check:before {
+  content: '\e811';
+}
+
+/* '' */
+.icon-pencil:before {
+  content: '\e812';
+}
+
+/* '' */
+.icon-cancel:before {
+  content: '\e813';
+}
+
+/* '' */
+.icon-right-dir:before {
+  content: '\e814';
+}
+
+/* '' */
+.icon-lock-1:before {
+  content: '\e815';
+}
+
+/* '' */
+.icon-mail:before {
+  content: '\e816';
+}
+
+/* '' */
+.icon-bell:before {
+  content: '\f0f3';
+}
+
+/* '' */
+.icon-trash:before {
+  content: '\f1f8';
+}
+
+/* '' */
+.icon-user:before {
+  content: '\f2c0';
+}
+
+/* '' */
+.form-btn {
+  font-size: 24px;
+  font-weight: 700;
+  color: #fff;
+  background-color: #5584ff;
+  cursor: pointer;
+  height: 71px;
+  width: 387px;
+  border-radius: 35px;
+  border: none;
+  margin-top: 104px;
+  position: relative;
+}
+
+.form-btn:hover {
+  background-color: #4b74e0;
+}
+
+.form-btn .btn-icon {
+  display: inline-block;
+  font-weight: normal;
+  position: absolute;
+  right: 37px;
+}
+
 .site-login {
   height: 100vh;
   width: auto;
@@ -471,7 +673,6 @@ template {
 }
 
 .site-login .user-block {
-  height: 850px;
   width: 1220px;
   background-color: #fff;
   position: absolute;
@@ -519,13 +720,11 @@ template {
   display: inline-block;
 }
 
-.site-login .user-block-head .authentication .signup,
-.site-login .user-block-head .authentication .login {
+.site-login .user-block-head .authentication .signup, .site-login .user-block-head .authentication .login {
   display: inline-block;
 }
 
-.site-login .user-block-head .authentication .signup .link,
-.site-login .user-block-head .authentication .login .link {
+.site-login .user-block-head .authentication .signup .link, .site-login .user-block-head .authentication .login .link {
   font-size: 24px;
   color: #fff;
   padding: 60px 55px;
@@ -533,8 +732,7 @@ template {
   position: relative;
 }
 
-.site-login .user-block-head .authentication .signup .link::after,
-.site-login .user-block-head .authentication .login .link::after {
+.site-login .user-block-head .authentication .signup .link::after, .site-login .user-block-head .authentication .login .link::after {
   content: '';
   height: 10px;
   width: 100%;
@@ -546,27 +744,115 @@ template {
   transition: background-color .3s linear;
 }
 
-.site-login .user-block-head .authentication .signup .link:hover::after,
-.site-login .user-block-head .authentication .login .link:hover::after {
+.site-login .user-block-head .authentication .signup .link:hover::after, .site-login .user-block-head .authentication .login .link:hover::after {
   display: block;
 }
 
-.site-login .user-block-head .authentication .signup .link.active::after,
-.site-login .user-block-head .authentication .login .link.active::after {
+.site-login .user-block-head .authentication .signup .link.active::after, .site-login .user-block-head .authentication .login .link.active::after {
   display: block;
 }
 
 .site-login .user-form {
-  padding: 47px 0;
+  padding: 86px 0 103px 0;
+  text-align: center;
 }
 
 .site-login .user-form .form-heading {
   font-size: 48px;
   font-weight: 300;
-  color: #999999;
-  text-align: center;
+  color: #999;
+  margin-bottom: 84px;
 }
 
 .site-login .user-form .form-heading .last-word {
   color: #6699ff;
+}
+
+.site-login .user-form .user-form-group {
+  width: 47%;
+  padding: 21px 0;
+  margin: 0 auto;
+  position: relative;
+}
+
+.site-login .user-form .username, .site-login .user-form .password, .site-login .user-form .email {
+  width: 100%;
+  font-size: 24px;
+  font-weight: 300;
+  color: #999;
+  border: 0;
+  border-bottom: 1px solid #d4d9e3;
+  padding: 15px 65px;
+  outline: 0;
+}
+
+.site-login .user-form .username::-webkit-input-placeholder, .site-login .user-form .password::-webkit-input-placeholder, .site-login .user-form .email::-webkit-input-placeholder {
+  /* Chrome/Opera/Safari */
+  color: #999;
+  font-weight: 300;
+}
+
+.site-login .user-form .username::-moz-placeholder, .site-login .user-form .password::-moz-placeholder, .site-login .user-form .email::-moz-placeholder {
+  /* Firefox 19+ */
+  color: #999;
+  font-weight: 300;
+}
+
+.site-login .user-form .username:-ms-input-placeholder, .site-login .user-form .password:-ms-input-placeholder, .site-login .user-form .email:-ms-input-placeholder {
+  /* IE 10+ */
+  color: #999;
+  font-weight: 300;
+}
+
+.site-login .user-form .username:-moz-placeholder, .site-login .user-form .password:-moz-placeholder, .site-login .user-form .email:-moz-placeholder {
+  /* Firefox 18- */
+  color: #999;
+  font-weight: 300;
+}
+
+.site-login .user-form .username:focus, .site-login .user-form .password:focus, .site-login .user-form .email:focus {
+  border-bottom: 2px solid #5384ff;
+}
+
+.site-login .user-form .user-form-checkbox {
+  width: 47%;
+  text-align: left;
+  padding: 10px 0;
+  margin: 0 auto;
+}
+
+.site-login .user-form .user-form-checkbox .terms {
+  color: #999;
+  padding-left: 50px;
+  position: relative;
+}
+
+.site-login .user-form .user-form-checkbox .terms::before {
+  content: '';
+  height: 18px;
+  width: 18px;
+  border: 1px solid #d4d9e3;
+  display: block;
+  position: absolute;
+  left: 0;
+}
+
+.site-login .user-form .user-form-checkbox .terms-link {
+  text-decoration: none;
+  color: #5384ff;
+}
+
+.site-login .user-form .user-form-checkbox .terms-link:hover {
+  text-decoration: underline;
+}
+
+.site-login .user-form .user-form-icon {
+  font-size: 30px;
+  position: absolute;
+  top: calc(50% - 17px);
+  left: 0;
+}
+
+.site-login .user-form .user-form-icon::before {
+  color: #5384ff;
 }

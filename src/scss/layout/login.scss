@@ -4,7 +4,6 @@
     background: url('../../asset/img/login-bg.jpg') center center no-repeat;
 
     .user-block {
-        height: 850px;
         width: 1220px;
         background-color: #fff;
         position: absolute;
@@ -49,8 +48,7 @@
             margin: 0;
             display: inline-block;
 
-            .signup,
-            .login {
+            .signup, .login {
                 display: inline-block;
 
                 .link {
@@ -80,17 +78,102 @@
             }
         }
     }
-    
+
     .user-form {
-        padding: 47px 0;
+        padding: 86px 0 103px 0;
+        text-align: center;
+
         .form-heading {
             font-size: 48px;
             font-weight: 300;
-            color: #999999;
-            text-align: center;
-            
+            color: #999;
+            margin-bottom: 84px;
+
             .last-word {
                 color: #6699ff;
+            }
+        }
+
+        .user-form-group {
+            width: 47%;
+            padding: 21px 0;
+            margin: 0 auto;
+            position: relative;
+        }
+
+        .username, .password, .email {
+            width: 100%;
+            font-size: 24px;
+            font-weight: 300;
+            color: #999;
+            border: 0;
+            border-bottom: 1px solid #d4d9e3;
+            padding: 15px 65px;
+            outline: 0;
+
+            &::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+                color: #999;
+                font-weight: 300;
+            }
+            &::-moz-placeholder { /* Firefox 19+ */
+                color: #999;
+                font-weight: 300;
+            }
+            &:-ms-input-placeholder { /* IE 10+ */
+                color: #999;
+                font-weight: 300;
+            }
+            &:-moz-placeholder { /* Firefox 18- */
+                color: #999;
+                font-weight: 300;
+            }
+
+            &:focus {
+                border-bottom: 2px solid #5384ff;
+            }
+        }
+
+        .user-form-checkbox {
+            width: 47%;
+            text-align: left;
+            padding: 10px 0;
+            margin: 0 auto;
+
+            .checkbox {
+                //opacity: 0;
+            }
+            
+            .terms {
+                color: #999;
+                padding-left: 50px;
+                position: relative;
+                &::before {
+                    content: '';
+                    height: 18px;
+                    width: 18px;
+                    border: 1px solid #d4d9e3;
+                    display: block;
+                    position: absolute;
+                    left: 0;
+                }
+            }
+            
+            .terms-link {
+                text-decoration: none;
+                color: #5384ff;
+                &:hover {
+                    text-decoration: underline;
+                }
+            }
+        }
+
+        .user-form-icon {
+            font-size: 30px;
+            position: absolute;
+            top: calc(50% - 17px);
+            left: 0;
+            &::before {
+                color: #5384ff;
             }
         }
     }

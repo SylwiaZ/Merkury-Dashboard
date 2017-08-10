@@ -1,0 +1,14 @@
+.form-btn {
+    @include btn(24px, #fff, #5584ff, #4b74e0);
+    @include btn-size(71px, 387px);
+    border: none;
+    margin-top: 104px;
+    position: relative;
+
+    .btn-icon {
+        display: inline-block;
+        font-weight: normal;
+        position: absolute;
+        right: 37px;
+    }
+}
